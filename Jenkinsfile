@@ -8,3 +8,4 @@ node {
       sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=BUT3_TP_revueDeCode -Dsonar.projectName='BUT3_TP_revueDeCode'"
     }
 }
+}
