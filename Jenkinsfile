@@ -5,7 +5,7 @@ node {
   stage('SonarQube Analysis') {
     def mvn = tool 'M3';
     withSonarQubeEnv() {
-      sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=BUT3_TP_revueDeCode -Dsonar.projectName='BUT3_TP_revueDeCode'"
+      sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=BUT3_TP_revueDeCode -Dsonar.projectName='BUT3_TP_revueDeCode' -Dsonar.token=sqp_d33c7c79e67576d831c73a4ee98b08a56371d595"
     }
 }
 }
